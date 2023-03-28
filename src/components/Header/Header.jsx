@@ -1,4 +1,7 @@
 import React from 'react'
+import React, { useState } from 'react'
+
+const [todo, setTodo] = useState("");
 
 function Header() {
     return (
