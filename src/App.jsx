@@ -33,19 +33,8 @@ function App() {
   return (
     <div>
       <section className="todoapp">
-        <Header
-          InputText={InputText}
-          setInputText={setInputText}
-          todos={todos}
-          setTodos={setTodos}
-        />
-        <TodoList
-          todos={todos}
-          setTodos={setTodos}
-          status={status}
-          setStatus={setStatus}
-          filteredTodos={filteredTodos}
-        />
+        <Header InputText={InputText} setInputText={setInputText} todos={todos} setTodos={setTodos} />
+        <TodoList todos={todos} setTodos={setTodos} status={status} setStatus={setStatus} filteredTodos={filteredTodos} />
       </section>
       <Footer />
     </div>

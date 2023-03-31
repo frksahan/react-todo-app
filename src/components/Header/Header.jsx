@@ -22,13 +22,7 @@ const Header = ({ InputText, setInputText, todos, setTodos }) => {
             <header className="header">
                 <h1>todos</h1>
                 <form onSubmit={submitTodoHandler}>
-                    <input
-                        className="new-todo"
-                        placeholder="What needs to be done?"
-                        autoFocus
-                        value={InputText}
-                        onChange={inputTextHandler}
-                    />
+                    <input className="new-todo" placeholder="What needs to be done?" autoFocus value={InputText} onChange={inputTextHandler} />
                 </form>
             </header>
         </div>

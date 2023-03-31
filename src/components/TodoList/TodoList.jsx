@@ -1,6 +1,6 @@
 import React from "react";
-import Todo from "./Todo";
-import TodoFooter from "./TodoFooter";
+import Todo from "../Todo/Todo";
+import TodoFooter from "../TodoFooter/TodoFooter";
 
 const TodoList = ({ todos, setTodos, status, setStatus, filteredTodos }) => {
     return (
@@ -13,22 +13,12 @@ const TodoList = ({ todos, setTodos, status, setStatus, filteredTodos }) => {
                         (
                             todo // burada eğer todos.map dersek, tüm todoları gösterir. filteredTodos.map dersek, filtrelenmiş todoları gösterir.
                         ) => (
-                            <Todo
-                                todo={todo}
-                                key={todo.id}
-                                setTodos={setTodos}
-                                todos={todos}
-                            />
+                            <Todo todo={todo} key={todo.id} setTodos={setTodos} todos={todos} />
                         )
                     )}
                 </ul>
             </section>
-            <TodoFooter
-                todos={todos}
-                setTodos={setTodos}
-                status={status}
-                setStatus={setStatus}
-            />
+            <TodoFooter todos={todos} setTodos={setTodos} status={status} setStatus={setStatus} />
         </div>
     );
 };
